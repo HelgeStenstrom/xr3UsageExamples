@@ -26,5 +26,8 @@ hs_err_pid*
 .idea/
 *.iml
 
+# Jetbrains or Maven?
+target/
+
 # MacOS
 .DS_Store
