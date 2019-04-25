@@ -24,47 +24,62 @@ There are a few things to work with or focus on
 ### jaudiotagger
 Original pom
 
-````xml
+```xml
 <dependency>
     <groupId>com.github.goxr3plus</groupId>
     <artifactId>jaudiotagger</artifactId>
     <version>V2.2.6</version>
 </dependency>
-````
+```
 
 
 		
 final pom
-````xml
+```xml
 <dependency>
     <groupId>net.jthink</groupId>
     <artifactId>jaudiotagger</artifactId>
     <version>2.2.5</version>
 </dependency>
-````
+```
 
         
 but it's in a repository that needs help to be found:
-````xml
+```xml
 <repositories>
     <repository>
         <id>jaudiotagger-repository</id>
         <url>https://dl.bintray.com/ijabz/maven</url>
     </repository>
 </repositories>
-````
+```
 
 
     
 module-info:
 
-````java
+```java
 module xr3UsageExamples {
     requires jaudiotagger;
 }
-````
+```
 
 IntelliJ helped me with the module name in the module-info file.
 Before I switched from the original pom to the final pom, I didn't get 
 that help. So there is some difference between the two external sources.
 
+### java-google-speech-api
+Original pom
+
+```xml
+<dependency>
+    <groupId>com.github.goxr3plus</groupId>
+    <artifactId>java-google-speech-api</artifactId>
+    <version>V2.1</version>
+</dependency>
+```
+
+# Help needed
+What is the right way to insert code blocks in this file? IntelliJ behaves
+strangely. It inserts backticks, so I don't get the three of them that I want, 
+but perhaps four.
