@@ -1,0 +1,315 @@
+This is what I get when I execute the Maven goal dependency:purge-local-repository
+in my other project XR3Player. The problem is caused by changes in the ~/.m2/repository,
+not changes in the files of the repo.
+
+
+/Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/bin/java -Dmaven.multiModuleProjectDirectory=/Users/helge/Documents/GitHub/XR3Player "-Dmaven.home=/Users/helge/Library/Application Support/JetBrains/Toolbox/apps/IDEA-C/ch-0/191.6707.61/IntelliJ IDEA CE.app/Contents/plugins/maven/lib/maven3" "-Dclassworlds.conf=/Users/helge/Library/Application Support/JetBrains/Toolbox/apps/IDEA-C/ch-0/191.6707.61/IntelliJ IDEA CE.app/Contents/plugins/maven/lib/maven3/bin/m2.conf" "-javaagent:/Users/helge/Library/Application Support/JetBrains/Toolbox/apps/IDEA-C/ch-0/191.6707.61/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar=55290:/Users/helge/Library/Application Support/JetBrains/Toolbox/apps/IDEA-C/ch-0/191.6707.61/IntelliJ IDEA CE.app/Contents/bin" -Dfile.encoding=UTF-8 -classpath "/Users/helge/Library/Application Support/JetBrains/Toolbox/apps/IDEA-C/ch-0/191.6707.61/IntelliJ IDEA CE.app/Contents/plugins/maven/lib/maven3/boot/plexus-classworlds-2.5.2.jar" org.codehaus.classworlds.Launcher -Didea.version2019.1.1 dependency:purge-local-repository
+[INFO] Scanning for projects...
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building XR3Player 3.128
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- maven-dependency-plugin:3.1.1:purge-local-repository (default-cli) @ XR3Player ---
+[WARNING] Unable to purge local repository location immediately: /Users/helge/.m2/repository/org/openjfx/javafx-controls/11.0.1
+[WARNING] Unable to purge local repository location immediately: /Users/helge/.m2/repository/org/openjfx/javafx-graphics/11.0.1
+[WARNING] Unable to purge local repository location immediately: /Users/helge/.m2/repository/org/openjfx/javafx-base/11.0.1
+[WARNING] Unable to purge local repository location immediately: /Users/helge/.m2/repository/org/openjfx/javafx-fxml/11.0.1
+[WARNING] Unable to purge local repository location immediately: /Users/helge/.m2/repository/org/openjfx/javafx-media/11.0.1
+[WARNING] Unable to purge local repository location immediately: /Users/helge/.m2/repository/org/openjfx/javafx-swing/11.0.1
+Downloading: https://repo.maven.apache.org/maven2/org/testfx/testfx-junit5/4.0.15-alpha/testfx-junit5-4.0.15-alpha.pom
+Downloaded: https://repo.maven.apache.org/maven2/org/testfx/testfx-junit5/4.0.15-alpha/testfx-junit5-4.0.15-alpha.pom (3 KB at 7.1 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/testfx/testfx-junit5/4.0.15-alpha/testfx-junit5-4.0.15-alpha.jar
+Downloaded: https://repo.maven.apache.org/maven2/org/testfx/testfx-junit5/4.0.15-alpha/testfx-junit5-4.0.15-alpha.jar (10 KB at 354.0 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/testfx/testfx-core/4.0.15-alpha/testfx-core-4.0.15-alpha.pom
+Downloaded: https://repo.maven.apache.org/maven2/org/testfx/testfx-core/4.0.15-alpha/testfx-core-4.0.15-alpha.pom (3 KB at 100.1 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/testfx/testfx-core/4.0.15-alpha/testfx-core-4.0.15-alpha.jar
+Downloaded: https://repo.maven.apache.org/maven2/org/testfx/testfx-core/4.0.15-alpha/testfx-core-4.0.15-alpha.jar (203 KB at 1404.1 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.pom
+Downloaded: https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.pom (766 B at 27.7 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar
+Downloaded: https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar (44 KB at 916.0 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/assertj/assertj-core/3.11.1/assertj-core-3.11.1.pom
+Downloaded: https://repo.maven.apache.org/maven2/org/assertj/assertj-core/3.11.1/assertj-core-3.11.1.pom (14 KB at 377.4 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/assertj/assertj-core/3.11.1/assertj-core-3.11.1.jar
+Downloaded: https://repo.maven.apache.org/maven2/org/assertj/assertj-core/3.11.1/assertj-core-3.11.1.jar (3990 KB at 7347.4 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.pom
+Downloaded: https://repo.maven.apache.org/maven2/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.pom (2 KB at 47.5 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar
+Downloaded: https://repo.maven.apache.org/maven2/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar (3 KB at 105.7 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter-api/5.3.1/junit-jupiter-api-5.3.1.pom
+Downloaded: https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter-api/5.3.1/junit-jupiter-api-5.3.1.pom (3 KB at 110.5 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter-api/5.3.1/junit-jupiter-api-5.3.1.jar
+Downloaded: https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter-api/5.3.1/junit-jupiter-api-5.3.1.jar (113 KB at 2671.9 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/opentest4j/opentest4j/1.1.1/opentest4j-1.1.1.pom
+Downloaded: https://repo.maven.apache.org/maven2/org/opentest4j/opentest4j/1.1.1/opentest4j-1.1.1.pom (2 KB at 96.7 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/opentest4j/opentest4j/1.1.1/opentest4j-1.1.1.jar
+Downloaded: https://repo.maven.apache.org/maven2/org/opentest4j/opentest4j/1.1.1/opentest4j-1.1.1.jar (7 KB at 316.1 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-commons/1.3.1/junit-platform-commons-1.3.1.pom
+Downloaded: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-commons/1.3.1/junit-platform-commons-1.3.1.pom (2 KB at 89.8 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-commons/1.3.1/junit-platform-commons-1.3.1.jar
+Downloaded: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-commons/1.3.1/junit-platform-commons-1.3.1.jar (77 KB at 2816.0 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/openjfx/javafx-controls/11.0.1/javafx-controls-11.0.1.pom
+Downloaded: https://repo.maven.apache.org/maven2/org/openjfx/javafx-controls/11.0.1/javafx-controls-11.0.1.pom (907 B at 42.2 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/openjfx/javafx-controls/11.0.1/javafx-controls-11.0.1.jar
+Downloaded: https://repo.maven.apache.org/maven2/org/openjfx/javafx-controls/11.0.1/javafx-controls-11.0.1.jar (306 B at 18.7 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/openjfx/javafx-controls/11.0.1/javafx-controls-11.0.1-mac.jar
+Downloaded: https://repo.maven.apache.org/maven2/org/openjfx/javafx-controls/11.0.1/javafx-controls-11.0.1-mac.jar (2453 KB at 7408.5 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/openjfx/javafx-graphics/11.0.1/javafx-graphics-11.0.1.pom
+Downloaded: https://repo.maven.apache.org/maven2/org/openjfx/javafx-graphics/11.0.1/javafx-graphics-11.0.1.pom (903 B at 49.0 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/openjfx/javafx-graphics/11.0.1/javafx-graphics-11.0.1.jar
+Downloaded: https://repo.maven.apache.org/maven2/org/openjfx/javafx-graphics/11.0.1/javafx-graphics-11.0.1.jar (306 B at 18.7 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/openjfx/javafx-graphics/11.0.1/javafx-graphics-11.0.1-mac.jar
+Downloaded: https://repo.maven.apache.org/maven2/org/openjfx/javafx-graphics/11.0.1/javafx-graphics-11.0.1-mac.jar (4694 KB at 8380.7 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/openjfx/javafx-base/11.0.1/javafx-base-11.0.1.pom
+Downloaded: https://repo.maven.apache.org/maven2/org/openjfx/javafx-base/11.0.1/javafx-base-11.0.1.pom (748 B at 40.6 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/openjfx/javafx-base/11.0.1/javafx-base-11.0.1.jar
+Downloaded: https://repo.maven.apache.org/maven2/org/openjfx/javafx-base/11.0.1/javafx-base-11.0.1.jar (302 B at 14.0 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/openjfx/javafx-base/11.0.1/javafx-base-11.0.1-mac.jar
+Downloaded: https://repo.maven.apache.org/maven2/org/openjfx/javafx-base/11.0.1/javafx-base-11.0.1-mac.jar (733 KB at 5678.0 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/openjfx/javafx-fxml/11.0.1/javafx-fxml-11.0.1.pom
+Downloaded: https://repo.maven.apache.org/maven2/org/openjfx/javafx-fxml/11.0.1/javafx-fxml-11.0.1.pom (899 B at 33.8 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/openjfx/javafx-fxml/11.0.1/javafx-fxml-11.0.1.jar
+Downloaded: https://repo.maven.apache.org/maven2/org/openjfx/javafx-fxml/11.0.1/javafx-fxml-11.0.1.jar (302 B at 15.5 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/openjfx/javafx-fxml/11.0.1/javafx-fxml-11.0.1-mac.jar
+Downloaded: https://repo.maven.apache.org/maven2/org/openjfx/javafx-fxml/11.0.1/javafx-fxml-11.0.1-mac.jar (125 KB at 2591.8 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/openjfx/javafx-media/11.0.1/javafx-media-11.0.1.pom
+Downloaded: https://repo.maven.apache.org/maven2/org/openjfx/javafx-media/11.0.1/javafx-media-11.0.1.pom (901 B at 51.8 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/openjfx/javafx-media/11.0.1/javafx-media-11.0.1.jar
+Downloaded: https://repo.maven.apache.org/maven2/org/openjfx/javafx-media/11.0.1/javafx-media-11.0.1.jar (303 B at 15.6 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/openjfx/javafx-media/11.0.1/javafx-media-11.0.1-mac.jar
+Downloaded: https://repo.maven.apache.org/maven2/org/openjfx/javafx-media/11.0.1/javafx-media-11.0.1-mac.jar (1653 KB at 7185.6 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/openjfx/javafx-swing/11.0.1/javafx-swing-11.0.1.pom
+Downloaded: https://repo.maven.apache.org/maven2/org/openjfx/javafx-swing/11.0.1/javafx-swing-11.0.1.pom (901 B at 41.9 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/openjfx/javafx-swing/11.0.1/javafx-swing-11.0.1.jar
+Downloaded: https://repo.maven.apache.org/maven2/org/openjfx/javafx-swing/11.0.1/javafx-swing-11.0.1.jar (303 B at 15.6 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/openjfx/javafx-swing/11.0.1/javafx-swing-11.0.1-mac.jar
+Downloaded: https://repo.maven.apache.org/maven2/org/openjfx/javafx-swing/11.0.1/javafx-swing-11.0.1-mac.jar (118 KB at 4334.8 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/kordamp/ikonli/ikonli-javafx/2.4.0/ikonli-javafx-2.4.0.pom
+Downloaded: https://repo.maven.apache.org/maven2/org/kordamp/ikonli/ikonli-javafx/2.4.0/ikonli-javafx-2.4.0.pom (2 KB at 54.0 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/kordamp/ikonli/ikonli-javafx/2.4.0/ikonli-javafx-2.4.0.jar
+Downloaded: https://repo.maven.apache.org/maven2/org/kordamp/ikonli/ikonli-javafx/2.4.0/ikonli-javafx-2.4.0.jar (70 KB at 2765.3 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/kordamp/ikonli/ikonli-core/2.4.0/ikonli-core-2.4.0.pom
+Downloaded: https://repo.maven.apache.org/maven2/org/kordamp/ikonli/ikonli-core/2.4.0/ikonli-core-2.4.0.pom (2 KB at 54.0 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/kordamp/ikonli/ikonli-core/2.4.0/ikonli-core-2.4.0.jar
+Downloaded: https://repo.maven.apache.org/maven2/org/kordamp/ikonli/ikonli-core/2.4.0/ikonli-core-2.4.0.jar (9 KB at 383.0 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/kordamp/ikonli/ikonli-typicons-pack/2.4.0/ikonli-typicons-pack-2.4.0.pom
+Downloaded: https://repo.maven.apache.org/maven2/org/kordamp/ikonli/ikonli-typicons-pack/2.4.0/ikonli-typicons-pack-2.4.0.pom (2 KB at 41.8 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/kordamp/ikonli/ikonli-typicons-pack/2.4.0/ikonli-typicons-pack-2.4.0.jar
+Downloaded: https://repo.maven.apache.org/maven2/org/kordamp/ikonli/ikonli-typicons-pack/2.4.0/ikonli-typicons-pack-2.4.0.jar (259 KB at 5075.1 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/kordamp/ikonli/ikonli-fontawesome-pack/2.4.0/ikonli-fontawesome-pack-2.4.0.pom
+Downloaded: https://repo.maven.apache.org/maven2/org/kordamp/ikonli/ikonli-fontawesome-pack/2.4.0/ikonli-fontawesome-pack-2.4.0.pom (2 KB at 60.0 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/kordamp/ikonli/ikonli-fontawesome-pack/2.4.0/ikonli-fontawesome-pack-2.4.0.jar
+Downloaded: https://repo.maven.apache.org/maven2/org/kordamp/ikonli/ikonli-fontawesome-pack/2.4.0/ikonli-fontawesome-pack-2.4.0.jar (663 KB at 6307.8 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/kordamp/ikonli/ikonli-material-pack/2.4.0/ikonli-material-pack-2.4.0.pom
+Downloaded: https://repo.maven.apache.org/maven2/org/kordamp/ikonli/ikonli-material-pack/2.4.0/ikonli-material-pack-2.4.0.pom (2 KB at 83.7 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/kordamp/ikonli/ikonli-material-pack/2.4.0/ikonli-material-pack-2.4.0.jar
+Downloaded: https://repo.maven.apache.org/maven2/org/kordamp/ikonli/ikonli-material-pack/2.4.0/ikonli-material-pack-2.4.0.jar (334 KB at 5472.4 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/kordamp/ikonli/ikonli-fontawesome5-pack/2.4.0/ikonli-fontawesome5-pack-2.4.0.pom
+Downloaded: https://repo.maven.apache.org/maven2/org/kordamp/ikonli/ikonli-fontawesome5-pack/2.4.0/ikonli-fontawesome5-pack-2.4.0.pom (2 KB at 42.1 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/kordamp/ikonli/ikonli-fontawesome5-pack/2.4.0/ikonli-fontawesome5-pack-2.4.0.jar
+Downloaded: https://repo.maven.apache.org/maven2/org/kordamp/ikonli/ikonli-fontawesome5-pack/2.4.0/ikonli-fontawesome5-pack-2.4.0.jar (880 KB at 6818.5 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/kordamp/ikonli/ikonli-runestroicons-pack/2.4.0/ikonli-runestroicons-pack-2.4.0.pom
+Downloaded: https://repo.maven.apache.org/maven2/org/kordamp/ikonli/ikonli-runestroicons-pack/2.4.0/ikonli-runestroicons-pack-2.4.0.pom (2 KB at 90.3 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/kordamp/ikonli/ikonli-runestroicons-pack/2.4.0/ikonli-runestroicons-pack-2.4.0.jar
+Downloaded: https://repo.maven.apache.org/maven2/org/kordamp/ikonli/ikonli-runestroicons-pack/2.4.0/ikonli-runestroicons-pack-2.4.0.jar (530 KB at 6304.9 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/kordamp/ikonli/ikonli-icomoon-pack/2.4.0/ikonli-icomoon-pack-2.4.0.pom
+Downloaded: https://repo.maven.apache.org/maven2/org/kordamp/ikonli/ikonli-icomoon-pack/2.4.0/ikonli-icomoon-pack-2.4.0.pom (2 KB at 78.3 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/kordamp/ikonli/ikonli-icomoon-pack/2.4.0/ikonli-icomoon-pack-2.4.0.jar
+Downloaded: https://repo.maven.apache.org/maven2/org/kordamp/ikonli/ikonli-icomoon-pack/2.4.0/ikonli-icomoon-pack-2.4.0.jar (265 KB at 5873.2 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/com/github/imcdonagh/image4j/0.7.2/image4j-0.7.2.pom
+[WARNING] The POM for com.github.imcdonagh:image4j:jar:0.7.2 is missing, no dependency information available
+Downloading: https://repo.maven.apache.org/maven2/com/github/imcdonagh/image4j/0.7.2/image4j-0.7.2.jar
+Downloading: https://repo.maven.apache.org/maven2/com/teamdev/jxbrowser/jxbrowser-win64/6.23/jxbrowser-win64-6.23.pom
+[WARNING] The POM for com.teamdev.jxbrowser:jxbrowser-win64:jar:6.23 is missing, no dependency information available
+Downloading: https://repo.maven.apache.org/maven2/com/teamdev/jxbrowser/jxbrowser-win64/6.23/jxbrowser-win64-6.23.jar
+Downloading: https://repo.maven.apache.org/maven2/com/teamdev/jxbrowser/jxbrowser/6.23/jxbrowser-6.23.pom
+[WARNING] The POM for com.teamdev.jxbrowser:jxbrowser:jar:6.23 is missing, no dependency information available
+Downloading: https://repo.maven.apache.org/maven2/com/teamdev/jxbrowser/jxbrowser/6.23/jxbrowser-6.23.jar
+Downloading: https://repo.maven.apache.org/maven2/org/controlsfx/controlsfx/9.0.0/controlsfx-9.0.0.pom
+Downloaded: https://repo.maven.apache.org/maven2/org/controlsfx/controlsfx/9.0.0/controlsfx-9.0.0.pom (2 KB at 28.4 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/controlsfx/controlsfx/9.0.0/controlsfx-9.0.0.jar
+Downloaded: https://repo.maven.apache.org/maven2/org/controlsfx/controlsfx/9.0.0/controlsfx-9.0.0.jar (925 KB at 5468.8 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/com/jfoenix/jfoenix/9.0.8/jfoenix-9.0.8.pom
+Downloaded: https://repo.maven.apache.org/maven2/com/jfoenix/jfoenix/9.0.8/jfoenix-9.0.8.pom (2 KB at 90.5 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/com/jfoenix/jfoenix/9.0.8/jfoenix-9.0.8.jar
+Downloaded: https://repo.maven.apache.org/maven2/com/jfoenix/jfoenix/9.0.8/jfoenix-9.0.8.jar (2363 KB at 7548.7 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/fxmisc/richtext/richtextfx/0.9.3/richtextfx-0.9.3.pom
+Downloaded: https://repo.maven.apache.org/maven2/org/fxmisc/richtext/richtextfx/0.9.3/richtextfx-0.9.3.pom (3 KB at 144.4 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/fxmisc/richtext/richtextfx/0.9.3/richtextfx-0.9.3.jar
+Downloaded: https://repo.maven.apache.org/maven2/org/fxmisc/richtext/richtextfx/0.9.3/richtextfx-0.9.3.jar (255 KB at 4627.0 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/reactfx/reactfx/2.0-M5/reactfx-2.0-M5.pom
+Downloaded: https://repo.maven.apache.org/maven2/org/reactfx/reactfx/2.0-M5/reactfx-2.0-M5.pom (2 KB at 64.0 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/reactfx/reactfx/2.0-M5/reactfx-2.0-M5.jar
+Downloaded: https://repo.maven.apache.org/maven2/org/reactfx/reactfx/2.0-M5/reactfx-2.0-M5.jar (419 KB at 4866.2 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/fxmisc/undo/undofx/2.1.0/undofx-2.1.0.pom
+Downloaded: https://repo.maven.apache.org/maven2/org/fxmisc/undo/undofx/2.1.0/undofx-2.1.0.pom (2 KB at 62.5 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/fxmisc/undo/undofx/2.1.0/undofx-2.1.0.jar
+Downloaded: https://repo.maven.apache.org/maven2/org/fxmisc/undo/undofx/2.1.0/undofx-2.1.0.jar (28 KB at 1298.6 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/fxmisc/flowless/flowless/0.6/flowless-0.6.pom
+Downloaded: https://repo.maven.apache.org/maven2/org/fxmisc/flowless/flowless/0.6/flowless-0.6.pom (2 KB at 119.6 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/fxmisc/flowless/flowless/0.6/flowless-0.6.jar
+Downloaded: https://repo.maven.apache.org/maven2/org/fxmisc/flowless/flowless/0.6/flowless-0.6.jar (63 KB at 2731.1 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/fxmisc/wellbehaved/wellbehavedfx/0.3.3/wellbehavedfx-0.3.3.pom
+Downloaded: https://repo.maven.apache.org/maven2/org/fxmisc/wellbehaved/wellbehavedfx/0.3.3/wellbehavedfx-0.3.3.pom (2 KB at 108.7 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/fxmisc/wellbehaved/wellbehavedfx/0.3.3/wellbehavedfx-0.3.3.jar
+Downloaded: https://repo.maven.apache.org/maven2/org/fxmisc/wellbehaved/wellbehavedfx/0.3.3/wellbehavedfx-0.3.3.jar (59 KB at 2103.0 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/com/1stleg/jnativehook/2.1.0/jnativehook-2.1.0.pom
+Downloaded: https://repo.maven.apache.org/maven2/com/1stleg/jnativehook/2.1.0/jnativehook-2.1.0.pom (2 KB at 74.3 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/com/1stleg/jnativehook/2.1.0/jnativehook-2.1.0.jar
+Downloaded: https://repo.maven.apache.org/maven2/com/1stleg/jnativehook/2.1.0/jnativehook-2.1.0.jar (204 KB at 4338.5 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/xerial/sqlite-jdbc/3.25.2/sqlite-jdbc-3.25.2.pom
+Downloaded: https://repo.maven.apache.org/maven2/org/xerial/sqlite-jdbc/3.25.2/sqlite-jdbc-3.25.2.pom (7 KB at 163.5 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/xerial/sqlite-jdbc/3.25.2/sqlite-jdbc-3.25.2.jar
+Downloaded: https://repo.maven.apache.org/maven2/org/xerial/sqlite-jdbc/3.25.2/sqlite-jdbc-3.25.2.jar (6900 KB at 7787.0 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.6/commons-io-2.6.pom
+Downloaded: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.6/commons-io-2.6.pom (14 KB at 556.9 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.6/commons-io-2.6.jar
+Downloaded: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.6/commons-io-2.6.jar (210 KB at 4112.8 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/commons-validator/commons-validator/1.6/commons-validator-1.6.pom
+Downloaded: https://repo.maven.apache.org/maven2/commons-validator/commons-validator/1.6/commons-validator-1.6.pom (12 KB at 839.8 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/commons-validator/commons-validator/1.6/commons-validator-1.6.jar
+Downloaded: https://repo.maven.apache.org/maven2/commons-validator/commons-validator/1.6/commons-validator-1.6.jar (182 KB at 4225.9 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/jsoup/jsoup/1.11.3/jsoup-1.11.3.pom
+Downloaded: https://repo.maven.apache.org/maven2/org/jsoup/jsoup/1.11.3/jsoup-1.11.3.pom (9 KB at 301.0 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/jsoup/jsoup/1.11.3/jsoup-1.11.3.jar
+Downloaded: https://repo.maven.apache.org/maven2/org/jsoup/jsoup/1.11.3/jsoup-1.11.3.jar (387 KB at 5443.3 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/json/json/20180130/json-20180130.pom
+Downloaded: https://repo.maven.apache.org/maven2/org/json/json/20180130/json-20180130.pom (6 KB at 325.8 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/json/json/20180130/json-20180130.jar
+Downloaded: https://repo.maven.apache.org/maven2/org/json/json/20180130/json-20180130.jar (61 KB at 2637.4 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/com/github/goxr3plus/java-google-speech-api/V2.1/java-google-speech-api-V2.1.pom
+[WARNING] The POM for com.github.goxr3plus:java-google-speech-api:jar:V2.1 is missing, no dependency information available
+Downloading: https://repo.maven.apache.org/maven2/com/github/goxr3plus/java-google-speech-api/V2.1/java-google-speech-api-V2.1.jar
+Downloading: https://repo.maven.apache.org/maven2/com/github/axet/java-flac-encoder/0.3.8/java-flac-encoder-0.3.8.pom
+Downloaded: https://repo.maven.apache.org/maven2/com/github/axet/java-flac-encoder/0.3.8/java-flac-encoder-0.3.8.pom (5 KB at 210.6 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/com/github/axet/java-flac-encoder/0.3.8/java-flac-encoder-0.3.8.jar
+Downloaded: https://repo.maven.apache.org/maven2/com/github/axet/java-flac-encoder/0.3.8/java-flac-encoder-0.3.8.jar (88 KB at 2563.8 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/com/mpatric/mp3agic/0.9.1/mp3agic-0.9.1.pom
+Downloaded: https://repo.maven.apache.org/maven2/com/mpatric/mp3agic/0.9.1/mp3agic-0.9.1.pom (4 KB at 158.2 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/com/mpatric/mp3agic/0.9.1/mp3agic-0.9.1.jar
+Downloaded: https://repo.maven.apache.org/maven2/com/mpatric/mp3agic/0.9.1/mp3agic-0.9.1.jar (70 KB at 1884.0 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/com/github/goxr3plus/jaudiotagger/V2.2.6/jaudiotagger-V2.2.6.pom
+[WARNING] The POM for com.github.goxr3plus:jaudiotagger:jar:V2.2.6 is missing, no dependency information available
+Downloading: https://repo.maven.apache.org/maven2/com/github/goxr3plus/jaudiotagger/V2.2.6/jaudiotagger-V2.2.6.jar
+Downloading: https://repo.maven.apache.org/maven2/com/github/goxr3plus/java-stream-player/V8.0.0/java-stream-player-V8.0.0.pom
+[WARNING] The POM for com.github.goxr3plus:java-stream-player:jar:V8.0.0 is missing, no dependency information available
+Downloading: https://repo.maven.apache.org/maven2/com/github/goxr3plus/java-stream-player/V8.0.0/java-stream-player-V8.0.0.jar
+Downloading: https://repo.maven.apache.org/maven2/com/googlecode/soundlibs/mp3spi/1.9.5.4/mp3spi-1.9.5.4.pom
+Downloaded: https://repo.maven.apache.org/maven2/com/googlecode/soundlibs/mp3spi/1.9.5.4/mp3spi-1.9.5.4.pom (3 KB at 98.6 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/com/googlecode/soundlibs/mp3spi/1.9.5.4/mp3spi-1.9.5.4.jar
+Downloaded: https://repo.maven.apache.org/maven2/com/googlecode/soundlibs/mp3spi/1.9.5.4/mp3spi-1.9.5.4.jar (34 KB at 1240.5 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/com/googlecode/soundlibs/jlayer/1.0.1.4/jlayer-1.0.1.4.pom
+Downloaded: https://repo.maven.apache.org/maven2/com/googlecode/soundlibs/jlayer/1.0.1.4/jlayer-1.0.1.4.pom (2 KB at 85.7 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/com/googlecode/soundlibs/jlayer/1.0.1.4/jlayer-1.0.1.4.jar
+Downloaded: https://repo.maven.apache.org/maven2/com/googlecode/soundlibs/jlayer/1.0.1.4/jlayer-1.0.1.4.jar (138 KB at 3129.2 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/junit/junit/3.8.2/junit-3.8.2.pom
+Downloaded: https://repo.maven.apache.org/maven2/junit/junit/3.8.2/junit-3.8.2.pom (747 B at 56.1 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/junit/junit/3.8.2/junit-3.8.2.jar
+Downloaded: https://repo.maven.apache.org/maven2/junit/junit/3.8.2/junit-3.8.2.jar (118 KB at 3927.1 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/jflac/jflac-codec/1.5.2/jflac-codec-1.5.2.pom
+Downloaded: https://repo.maven.apache.org/maven2/org/jflac/jflac-codec/1.5.2/jflac-codec-1.5.2.pom (653 B at 35.4 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/jflac/jflac-codec/1.5.2/jflac-codec-1.5.2.jar
+Downloaded: https://repo.maven.apache.org/maven2/org/jflac/jflac-codec/1.5.2/jflac-codec-1.5.2.jar (80 KB at 2102.9 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/com/github/Trilarion/java-vorbis-support/v1.0.0/java-vorbis-support-v1.0.0.pom
+[WARNING] The POM for com.github.Trilarion:java-vorbis-support:jar:v1.0.0 is missing, no dependency information available
+Downloading: https://repo.maven.apache.org/maven2/com/github/Trilarion/java-vorbis-support/v1.0.0/java-vorbis-support-v1.0.0.jar
+Downloading: https://repo.maven.apache.org/maven2/com/googlecode/soundlibs/tritonus-share/0.3.7.4/tritonus-share-0.3.7.4.pom
+Downloaded: https://repo.maven.apache.org/maven2/com/googlecode/soundlibs/tritonus-share/0.3.7.4/tritonus-share-0.3.7.4.pom (2 KB at 65.3 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/com/googlecode/soundlibs/tritonus-share/0.3.7.4/tritonus-share-0.3.7.4.jar
+Downloaded: https://repo.maven.apache.org/maven2/com/googlecode/soundlibs/tritonus-share/0.3.7.4/tritonus-share-0.3.7.4.jar (130 KB at 1906.6 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/com/googlecode/soundlibs/tritonus-all/0.3.7.2/tritonus-all-0.3.7.2.pom
+Downloaded: https://repo.maven.apache.org/maven2/com/googlecode/soundlibs/tritonus-all/0.3.7.2/tritonus-all-0.3.7.2.pom (3 KB at 138.9 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/com/googlecode/soundlibs/tritonus-all/0.3.7.2/tritonus-all-0.3.7.2.jar
+Downloaded: https://repo.maven.apache.org/maven2/com/googlecode/soundlibs/tritonus-all/0.3.7.2/tritonus-all-0.3.7.2.jar (486 KB at 4150.3 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/com/googlecode/soundlibs/jorbis/0.0.17-2/jorbis-0.0.17-2.pom
+Downloaded: https://repo.maven.apache.org/maven2/com/googlecode/soundlibs/jorbis/0.0.17-2/jorbis-0.0.17-2.pom (3 KB at 113.6 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/com/googlecode/soundlibs/jorbis/0.0.17-2/jorbis-0.0.17-2.jar
+Downloaded: https://repo.maven.apache.org/maven2/com/googlecode/soundlibs/jorbis/0.0.17-2/jorbis-0.0.17-2.jar (97 KB at 3325.5 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/com/github/goxr3plus/FX-BorderlessScene/V3.1.0/FX-BorderlessScene-V3.1.0.pom
+[WARNING] The POM for com.github.goxr3plus:FX-BorderlessScene:jar:V3.1.0 is missing, no dependency information available
+Downloading: https://repo.maven.apache.org/maven2/com/github/goxr3plus/FX-BorderlessScene/V3.1.0/FX-BorderlessScene-V3.1.0.jar
+Downloading: https://repo.maven.apache.org/maven2/com/dropbox/core/dropbox-core-sdk/3.0.11/dropbox-core-sdk-3.0.11.pom
+Downloaded: https://repo.maven.apache.org/maven2/com/dropbox/core/dropbox-core-sdk/3.0.11/dropbox-core-sdk-3.0.11.pom (4 KB at 168.3 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/com/dropbox/core/dropbox-core-sdk/3.0.11/dropbox-core-sdk-3.0.11.jar
+Downloaded: https://repo.maven.apache.org/maven2/com/dropbox/core/dropbox-core-sdk/3.0.11/dropbox-core-sdk-3.0.11.jar (5572 KB at 8229.8 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-core/2.7.4/jackson-core-2.7.4.pom
+Downloaded: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-core/2.7.4/jackson-core-2.7.4.pom (5 KB at 274.6 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-core/2.7.4/jackson-core-2.7.4.jar
+Downloaded: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-core/2.7.4/jackson-core-2.7.4.jar (248 KB at 5371.1 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/atteo/evo-inflector/1.2.2/evo-inflector-1.2.2.pom
+Downloaded: https://repo.maven.apache.org/maven2/org/atteo/evo-inflector/1.2.2/evo-inflector-1.2.2.pom (2 KB at 91.2 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/atteo/evo-inflector/1.2.2/evo-inflector-1.2.2.jar
+Downloaded: https://repo.maven.apache.org/maven2/org/atteo/evo-inflector/1.2.2/evo-inflector-1.2.2.jar (13 KB at 658.4 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/ws/schild/jave-native-win64/2.4.5/jave-native-win64-2.4.5.pom
+Downloaded: https://repo.maven.apache.org/maven2/ws/schild/jave-native-win64/2.4.5/jave-native-win64-2.4.5.pom (9 KB at 473.5 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/ws/schild/jave-native-win64/2.4.5/jave-native-win64-2.4.5.jar
+Downloaded: https://repo.maven.apache.org/maven2/ws/schild/jave-native-win64/2.4.5/jave-native-win64-2.4.5.jar (20516 KB at 9017.8 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/ws/schild/jave-core/2.4.5/jave-core-2.4.5.pom
+Downloaded: https://repo.maven.apache.org/maven2/ws/schild/jave-core/2.4.5/jave-core-2.4.5.pom (9 KB at 331.1 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/ws/schild/jave-core/2.4.5/jave-core-2.4.5.jar
+Downloaded: https://repo.maven.apache.org/maven2/ws/schild/jave-core/2.4.5/jave-core-2.4.5.jar (36 KB at 1598.7 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/commons-logging/commons-logging-api/1.1/commons-logging-api-1.1.pom
+Downloaded: https://repo.maven.apache.org/maven2/commons-logging/commons-logging-api/1.1/commons-logging-api-1.1.pom (6 KB at 248.7 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/commons-logging/commons-logging-api/1.1/commons-logging-api-1.1.jar
+Downloaded: https://repo.maven.apache.org/maven2/commons-logging/commons-logging-api/1.1/commons-logging-api-1.1.jar (44 KB at 2177.6 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/com/github/goxr3plus/XR3Capture/V101/XR3Capture-V101.pom
+[WARNING] The POM for com.github.goxr3plus:XR3Capture:jar:V101 is missing, no dependency information available
+Downloading: https://repo.maven.apache.org/maven2/com/github/goxr3plus/XR3Capture/V101/XR3Capture-V101.jar
+Downloading: https://repo.maven.apache.org/maven2/com/github/goxr3plus/javasysmon2/8.0.0/javasysmon2-8.0.0.pom
+[WARNING] The POM for com.github.goxr3plus:javasysmon2:jar:8.0.0 is missing, no dependency information available
+Downloading: https://repo.maven.apache.org/maven2/com/github/goxr3plus/javasysmon2/8.0.0/javasysmon2-8.0.0.jar
+Downloading: https://repo.maven.apache.org/maven2/org/zeroturnaround/zt-zip/1.13/zt-zip-1.13.pom
+Downloaded: https://repo.maven.apache.org/maven2/org/zeroturnaround/zt-zip/1.13/zt-zip-1.13.pom (6 KB at 189.3 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/zeroturnaround/zt-zip/1.13/zt-zip-1.13.jar
+Downloaded: https://repo.maven.apache.org/maven2/org/zeroturnaround/zt-zip/1.13/zt-zip-1.13.jar (109 KB at 2160.3 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.6.6/slf4j-api-1.6.6.pom
+Downloaded: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.6.6/slf4j-api-1.6.6.pom (3 KB at 154.5 KB/sec)
+Downloading: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.6.6/slf4j-api-1.6.6.jar
+Downloaded: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.6.6/slf4j-api-1.6.6.jar (26 KB at 1161.9 KB/sec)
+[WARNING] The POM for com.github.imcdonagh:image4j:jar:0.7.2 is missing, no dependency information available
+[WARNING] The POM for com.teamdev.jxbrowser:jxbrowser-win64:jar:6.23 is missing, no dependency information available
+[WARNING] The POM for com.teamdev.jxbrowser:jxbrowser:jar:6.23 is missing, no dependency information available
+[WARNING] The POM for com.github.goxr3plus:java-google-speech-api:jar:V2.1 is missing, no dependency information available
+[WARNING] The POM for com.github.goxr3plus:jaudiotagger:jar:V2.2.6 is missing, no dependency information available
+[WARNING] The POM for com.github.goxr3plus:java-stream-player:jar:V8.0.0 is missing, no dependency information available
+[WARNING] The POM for com.github.Trilarion:java-vorbis-support:jar:v1.0.0 is missing, no dependency information available
+[WARNING] The POM for com.github.goxr3plus:FX-BorderlessScene:jar:V3.1.0 is missing, no dependency information available
+[WARNING] The POM for com.github.goxr3plus:XR3Capture:jar:V101 is missing, no dependency information available
+[WARNING] The POM for com.github.goxr3plus:javasysmon2:jar:8.0.0 is missing, no dependency information available
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 13.676 s
+[INFO] Finished at: 2019-04-25T22:51:29+02:00
+[INFO] Final Memory: 15M/57M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-dependency-plugin:3.1.1:purge-local-repository (default-cli) on project XR3Player: Failed to refresh project dependencies for: com.github.goxr3plus:XR3Player:jar:3.128: required artifacts missing:
+[ERROR] com.github.imcdonagh:image4j:jar:0.7.2
+[ERROR] com.teamdev.jxbrowser:jxbrowser-win64:jar:6.23
+[ERROR] com.teamdev.jxbrowser:jxbrowser:jar:6.23
+[ERROR] com.github.goxr3plus:java-google-speech-api:jar:V2.1
+[ERROR] com.github.goxr3plus:jaudiotagger:jar:V2.2.6
+[ERROR] com.github.goxr3plus:java-stream-player:jar:V8.0.0
+[ERROR] com.github.Trilarion:java-vorbis-support:jar:v1.0.0
+[ERROR] com.github.goxr3plus:FX-BorderlessScene:jar:V3.1.0
+[ERROR] com.github.goxr3plus:XR3Capture:jar:V101
+[ERROR] com.github.goxr3plus:javasysmon2:jar:8.0.0
+[ERROR]
+[ERROR] for the artifact:
+[ERROR] com.github.goxr3plus:XR3Player:jar:3.128
+[ERROR]
+[ERROR] from the specified remote repositories:
+[ERROR] jitpack.io (https://jitpack.io, releases=true, snapshots=true),
+[ERROR] jcenter (http://jcenter.bintray.com, releases=true, snapshots=true),
+[ERROR] com.teamdev (http://maven.teamdev.com/repository/products, releases=true, snapshots=true),
+[ERROR] central (https://repo.maven.apache.org/maven2, releases=true, snapshots=false)
+[ERROR] -> [Help 1]
+[ERROR]
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR]
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+
+Process finished with exit code 1

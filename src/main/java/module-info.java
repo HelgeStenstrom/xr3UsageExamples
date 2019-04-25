@@ -4,6 +4,8 @@ module xr3UsageExamples {
 
     requires jaudiotagger;
 
+    //requires spee
+
     //requires org.jaudiotagger.tag.id3;
     // requires com.github.goxr3plus;
     exports org.helgestenstrom;
