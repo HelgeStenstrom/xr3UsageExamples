@@ -14,7 +14,7 @@ import javafx.concurrent.Task;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 
-public class ImportStuff {
+public class ImportJAudioTagger {
 
     String one() {
         final ID3v24FieldKey album = ID3v24FieldKey.ALBUM;
