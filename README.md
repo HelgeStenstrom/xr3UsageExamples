@@ -19,3 +19,52 @@ There are a few things to work with or focus on
     two places where it can be put (Sources root and Test sources root), and
     it makes a difference. 
     
+    
+## External dependencies
+### jaudiotagger
+Original pom
+
+````xml
+<dependency>
+    <groupId>com.github.goxr3plus</groupId>
+    <artifactId>jaudiotagger</artifactId>
+    <version>V2.2.6</version>
+</dependency>
+````
+
+
+		
+final pom
+````xml
+<dependency>
+    <groupId>net.jthink</groupId>
+    <artifactId>jaudiotagger</artifactId>
+    <version>2.2.5</version>
+</dependency>
+````
+
+        
+but it's in a repository that needs help to be found:
+````xml
+<repositories>
+    <repository>
+        <id>jaudiotagger-repository</id>
+        <url>https://dl.bintray.com/ijabz/maven</url>
+    </repository>
+</repositories>
+````
+
+
+    
+module-info:
+
+````java
+module xr3UsageExamples {
+    requires jaudiotagger;
+}
+````
+
+IntelliJ helped me with the module name in the module-info file.
+Before I switched from the original pom to the final pom, I didn't get 
+that help. So there is some difference between the two external sources.
+
