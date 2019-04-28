@@ -1,13 +1,6 @@
 module xr3UsageExamples {
-    requires javafx.controls;
-    //requires org.junit.jupiter.api;
-
-    requires jaudiotagger;
-
-    //requires spee
-
-    //requires org.jaudiotagger.tag.id3;
-    // requires com.github.goxr3plus;
     exports org.helgestenstrom;
-
+    requires javafx.controls;
+    requires jaudiotagger;
+    requires java.google.speech.api;
 }

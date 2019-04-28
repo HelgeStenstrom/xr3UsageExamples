@@ -132,7 +132,37 @@ This COULD be a Java11 problem. So I changed the project to Java 10 by chang 11 
 a number of places in the pom file, and also changed the IntelliJ project setting. Then I re-ran 
 the Maven goal. No success.
 
-# Help needed
-What is the right way to insert code blocks in this file? IntelliJ behaves
-strangely. It inserts backticks, so I don't get the three of them that I want, 
-but perhaps four.
+By adding 
+
+```xml
+    <repository>
+        <id>jitpack.io</id>
+        <url>https://jitpack.io</url>
+    </repository>
+```
+
+to the pom.xml, and changing the requested version from V2.1 to 8.0.0, the Maven import works. 
+I don't know why V2.1 doesn't work. It seems that jitpack.io is a service that provides github repos to Maven.
+
+
+The only two classes that are used from this library are FFT and Complex. It seems like the wrong library
+to import for that functionality. Besides, there is a bug in the Complex class.
+
+To get the FFT and Complex classes, I now import 
+
+```java
+import com.darkprograms.speech.util.Complex;
+import com.darkprograms.speech.util.FFT;
+```
+
+and not 
+
+```java
+import com.goxr3plus.speech.util.Complex;
+import com.goxr3plus.speech.util.FFT;
+```
+
+even though the Maven depencency clearly says
+`<groupId>com.github.goxr3plus</groupId>`.
+I don't understand it.
+
