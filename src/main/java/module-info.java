@@ -3,4 +3,6 @@ module xr3UsageExamples {
     requires javafx.controls;
     requires jaudiotagger;
     requires java.google.speech.api;
+    //requires tritonus.share;
+    //requires
 }

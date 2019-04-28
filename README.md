@@ -166,3 +166,69 @@ even though the Maven depencency clearly says
 `<groupId>com.github.goxr3plus</groupId>`.
 I don't understand it.
 
+
+### java-stream-player
+
+Added to `pom.xml`:
+
+```xml
+    <dependency>
+        <groupId>com.github.goxr3plus</groupId>
+        <artifactId>java-stream-player</artifactId>
+        <version>V8.0.0</version>
+    </dependency>
+```
+
+Problem. When I run tests that worked before, I get the following in the console log:
+
+`
+Error:java: the unnamed module reads package org.tritonus.share.sampled.mixer from both tritonus.all and tritonus.share
+Error:java: the unnamed module reads package org.tritonus.share.sampled.file from both tritonus.all and tritonus.share
+Error:java: the unnamed module reads package org.tritonus.share.sampled.convert from both tritonus.all and tritonus.share
+`
+and a number of similar messages.
+
+To `module-info.java` I add
+```java
+    requires  tritonus.share;
+```
+but it doesn't change anything.
+
+This seems to be a problem inherent in java-stream-player, 
+at least in the com.github.goxr3plus-packaged fork.
+
+Web resources:
+- Seems very relevant: https://stackoverflow.com/questions/42358084/package-conflicts-with-automatic-modules-in-java-9
+- https://stackoverflow.com/questions/49445583/java-9-unnamed-module-reads-package-x-from-both-while-debugging-with-inte
+- maybe relevant: https://stackoverflow.com/questions/44463552/java-9-module-reads-package-x-from-a-and-b
+
+The problem is likely in the pom file of the depencency. It has 
+```xml
+    <dependency>
+        <groupId>com.googlecode.soundlibs</groupId>
+        <artifactId>tritonus-share</artifactId>
+        <version>0.3.7.4</version>
+    </dependency>
+    <dependency>
+        <groupId>com.googlecode.soundlibs</groupId>
+        <artifactId>tritonus-all</artifactId>
+        <version>0.3.7.2</version>
+    </dependency>
+```
+which both have a certain package. That is not OK. 
+
+I'll not fix that problem now, but wait for it be fixed.
+
+### FX-BorderlessScene
+From XR3Player `pom.xml`
+
+```xml
+    <!-- FX-BorderlessScene -->
+    <!-- https://github.com/goxr3plus/FX-BorderlessScene -->
+    <dependency>
+        <groupId>com.github.goxr3plus</groupId>
+        <artifactId>FX-BorderlessScene</artifactId>
+        <version>V3.1.0</version>
+    </dependency>
+```
+
