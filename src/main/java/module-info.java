@@ -1,4 +1,4 @@
-module xr3UsageExamples {
+open module xr3UsageExamples {
     exports org.helgestenstrom;
     requires javafx.controls;
     requires jaudiotagger;

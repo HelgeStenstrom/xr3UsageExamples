@@ -228,7 +228,7 @@ From XR3Player `pom.xml`
     <dependency>
         <groupId>com.github.goxr3plus</groupId>
         <artifactId>FX-BorderlessScene</artifactId>
-        <version>V3.1.0</version>
+        <version>4.3.1</version>
     </dependency>
 ```
 

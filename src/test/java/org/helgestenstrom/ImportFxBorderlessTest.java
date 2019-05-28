@@ -1,9 +1,7 @@
 package org.helgestenstrom;
 
-import main.java.com.goxr3plus.fxborderlessscene.borderless.*;
+import com.goxr3plus.fxborderlessscene.borderless.BorderlessController;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.fail;
 
 public class ImportFxBorderlessTest {
 
