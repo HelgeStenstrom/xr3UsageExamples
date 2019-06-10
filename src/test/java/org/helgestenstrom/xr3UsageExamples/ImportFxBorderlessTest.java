@@ -5,14 +5,10 @@ import org.junit.jupiter.api.Test;
 
 public class ImportFxBorderlessTest {
 
-    @Test
-    void method() {
-        new BorderlessController();
-    }
 
     @Test
-    void m2() {
+    void create() {
         final ImportFxBorderless importFxBorderless = new ImportFxBorderless();
-        importFxBorderless.method();
+        importFxBorderless.create();
     }
 }

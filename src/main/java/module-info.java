@@ -3,4 +3,6 @@ open module org.helgestenstrom {
     requires javafx.controls;
     requires jaudiotagger;
     requires java.google.speech.api;
+    requires FX.BorderlessScene;
+    requires javasysmon2;
 }

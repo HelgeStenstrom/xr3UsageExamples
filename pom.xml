@@ -53,9 +53,9 @@
 
 
         <dependency>
-            <groupId>net.jthink</groupId>
+            <groupId>com.github.goxr3plus</groupId>
             <artifactId>jaudiotagger</artifactId>
-            <version>2.2.5</version>
+            <version>2.2.7</version>
         </dependency>
 
 
@@ -67,12 +67,12 @@
         </dependency>
 
 
-        <!-- https://github.com/goxr3plus/java-stream-player -->
-<!--        <dependency>
+        <!-- AUDIO SUPPORT -->
+        <dependency>
             <groupId>com.github.goxr3plus</groupId>
             <artifactId>java-stream-player</artifactId>
-            <version>V8.0.0</version>
-        </dependency>-->
+            <version>9.0.4</version>
+        </dependency>
 
         <!-- FX-BorderlessScene -->
         <!-- https://github.com/goxr3plus/FX-BorderlessScene -->
@@ -84,6 +84,12 @@
 
 
 
+        <!-- JAVA NATIVE CODE FOR CONTROLLING HARDWARE -->
+        <dependency>
+            <groupId>com.github.goxr3plus</groupId>
+            <artifactId>javasysmon2</artifactId>
+            <version>8.0.0</version>
+        </dependency>
 
 
 
