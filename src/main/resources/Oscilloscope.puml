@@ -1,0 +1,30 @@
+@startuml
+
+note "JavaFx" as N1
+N1 .. Canvas
+N1 .. GraphicsContext
+
+class GraphicsContext {
+strokeLine()
+}
+
+class Canvas
+
+class ResizableCanvas extends Canvas{
++GraphicsContext gc
+}
+
+class VisualizerModel extends ResizableCanvas
+
+class VisualizerDrawer extends VisualizerModel {
+drawOscilloScopeLines()
+}
+
+class Oscilloscope {
+visualizerDrawer
+}
+
+Oscilloscope o-- VisualizerDrawer
+ResizableCanvas o-- GraphicsContext
+
+@enduml

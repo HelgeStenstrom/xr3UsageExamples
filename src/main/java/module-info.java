@@ -1,8 +1,6 @@
-open module xr3UsageExamples {
-    exports org.helgestenstrom;
+open module org.helgestenstrom {
+    exports org.helgestenstrom.xr3UsageExamples;
     requires javafx.controls;
     requires jaudiotagger;
     requires java.google.speech.api;
-    //requires tritonus.share;
-    //requires
 }

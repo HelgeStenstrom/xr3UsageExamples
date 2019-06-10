@@ -1,4 +1,4 @@
-package org.helgestenstrom;
+package org.helgestenstrom.xr3UsageExamples;
 
 import com.goxr3plus.fxborderlessscene.borderless.BorderlessController;
 import org.junit.jupiter.api.Test;

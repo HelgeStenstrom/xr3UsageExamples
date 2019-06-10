@@ -1,4 +1,4 @@
-package org.helgestenstrom;
+package org.helgestenstrom.xr3UsageExamples;
 
 import org.jaudiotagger.tag.id3.ID3v24FieldKey;
 

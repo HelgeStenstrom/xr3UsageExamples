@@ -1,4 +1,4 @@
-package org.helgestenstrom;
+package org.helgestenstrom.xr3UsageExamples;
 
 public class Main {
     public static void main(String[] args) {
