@@ -1,6 +1,6 @@
 @startuml
 
-note "JavaFx" as N1
+note "Part of JavaFx" as N1
 N1 .. Canvas
 N1 .. GraphicsContext
 
@@ -20,11 +20,18 @@ class VisualizerDrawer extends VisualizerModel {
 drawOscilloScopeLines()
 }
 
+abstract class Visualizer extends VisualizerDrawer
+
+class PaintService extends AnimationTimer {
+handle()
+}
+
 class Oscilloscope {
 visualizerDrawer
 }
 
-Oscilloscope o-- VisualizerDrawer
+Oscilloscope o-- VisualizerDrawer : has a reference to
+VisualizerDrawer o-- Oscilloscope : Creates Oscilloscope and has a reference to it
 ResizableCanvas o-- GraphicsContext
 
 @enduml
