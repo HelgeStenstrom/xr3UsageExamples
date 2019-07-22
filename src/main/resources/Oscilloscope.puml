@@ -14,13 +14,21 @@ class ResizableCanvas extends Canvas{
 +GraphicsContext gc
 }
 
-class VisualizerModel extends ResizableCanvas
+interface KJDigitalSignalProcessor
+
+abstract class VisualizerModel extends ResizableCanvas implements KJDigitalSignalProcessor
 
 class VisualizerDrawer extends VisualizerModel {
 drawOscilloScopeLines()
+drawOscilloscope(boolean stereo)
 }
 
-abstract class Visualizer extends VisualizerDrawer
+abstract class Visualizer extends VisualizerDrawer {
+}
+
+class XPlayerVisualizer extends Visualizer
+
+class MicrophoneVisualizer extends Visualizer
 
 class PaintService extends AnimationTimer {
 handle()
