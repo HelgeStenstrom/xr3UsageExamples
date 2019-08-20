@@ -1,0 +1,16 @@
+@startuml
+
+interface KJDigitalSignalProcessor
+
+class VisualizerModel implements KJDigitalSignalProcessor {
+KJDSPAudioDataConsumer dsp
+writeDSP()
+}
+
+class KJDSPAudioDataConsumer implements KJAudioDataConsumer
+
+interface KJAudioDataConsumer {
+writeAudioData(pAudioData)
+}
+
+@enduml

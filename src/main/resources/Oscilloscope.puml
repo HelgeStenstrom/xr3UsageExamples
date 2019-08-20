@@ -38,6 +38,10 @@ class Oscilloscope {
 visualizerDrawer
 }
 
+class WaveVisualization extends WaveFormPane
+
+class WaveFormPane extends ResizableCanvas
+
 Oscilloscope o-- VisualizerDrawer : has a reference to
 VisualizerDrawer o-- Oscilloscope : Creates Oscilloscope and has a reference to it
 ResizableCanvas o-- GraphicsContext
